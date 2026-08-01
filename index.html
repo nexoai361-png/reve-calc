@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after {
   margin: 0;
@@ -73,12 +76,7 @@ body {
 
 .calculator {
   width: 340px;
-  background: var(--surface);
-  border-radius: 16px;
   padding: 20px;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid var(--border);
-  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .calculator-header {
@@ -134,11 +132,10 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   overflow: hidden;
-  border: 1px solid var(--border);
-  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .display-previous {
+  font-family: "Fira Code", monospace;
   font-size: 14px;
   color: var(--text-muted);
   min-height: 20px;
@@ -149,6 +146,7 @@ body {
 }
 
 .display-current {
+  font-family: "Fira Code", monospace;
   font-size: 36px;
   font-weight: 500;
   color: var(--display-text);
@@ -279,8 +277,6 @@ body {
     border-radius: 0;
     padding: 16px;
     padding-bottom: max(16px, env(safe-area-inset-bottom));
-    border: none;
-    box-shadow: none;
     display: flex;
     flex-direction: column;
     overflow: hidden;

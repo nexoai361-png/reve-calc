@@ -1,0 +1,22 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "Professional minimalist calculator with Capacitor Android support",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'no build step needed — static HTML'",
+    "capacitor:sync": "npx cap sync",
+    "capacitor:add:android": "npx cap add android",
+    "android:build": "cd android && ./gradlew assembleDebug"
+  },
+  "keywords": ["calculator", "capacitor", "android", "pwa"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0"
+  }
+}

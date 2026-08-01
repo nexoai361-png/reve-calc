@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Capacitor
+android/
+ios/
+www/
+dist/
+build/
+
+# Android build outputs
+android/app/build/
+android/build/
+android/.gradle/
+android/captures/
+android/local.properties
+android/gradle-wrapper.jar
+android/gradlew
+android/gradlew.bat
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
